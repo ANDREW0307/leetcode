@@ -1,7 +1,3 @@
-class Solution {
-  public:
-  
-
   /*
   * idea: since the string can be in any order, check for the frequency of each character in bothstrings, then compare the frequencies of each character. if they match, then the strings are anagrams, otherwise they are not
   *
@@ -22,6 +18,10 @@ class Solution {
   *   return false
   *
   */
+
+class Solution {
+  public:
+  
 
 
   bool isAnagram(string s, string t) {
