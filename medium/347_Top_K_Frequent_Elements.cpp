@@ -26,7 +26,7 @@ public:
         vector<vector<int>> buckets(nums.size() + 1);
         
         // mapping freq_map entries to the corresponding bucket
-        for (auto& [number, freq] : freq_map) {
+        for (const auto& [number, freq] : freq_map) {
             buckets[freq].push_back(number);
         }
 
