@@ -16,6 +16,7 @@ public:
 
         // if this rate works, see if lower ones work
         if (check_rate(rate, piles, h) == true) {
+            // rate - 1 is not used because that would exclude rate from later search ranges. However, we know that the rate currently works, so we want to include it in future search ranges in case the lower ones don't work
             return binary_search_speed(lower, rate, piles, h);
         } else {
             return binary_search_speed(rate + 1, upper, piles, h);
@@ -34,4 +35,3 @@ public:
         }
     }
 };
-
